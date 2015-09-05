@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is the Eindhoven Labs Community">
+    <meta name="author" content="Paolo Antonio Rossi">
+
+    <title>Makers of Eindhoven</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+</head>
+
+<body ng-app="app">
+
+    <a  name="pitches"></a>
+
+	<div ng-controller="PitchesCtrl" class="container">
+
+		<ul class="list-group">
+
+			<li ng-repeat="pitch in pitches | orderBy: '-votes'" class="list-group-item">
+				<div class="row">
+				<div class="col-md-1" style="padding-top:13px;"> 				
+				<svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg"><title>Rectangle 27</title><path d="M.524 7.42C-.318 8.846.342 10 2 10h7c1.657 0 2.317-1.156 1.476-2.58L6.516.72c-.56-.95-1.473-.947-2.032 0l-3.96 6.7z" fill="#000" fill-rule="evenodd"></path></svg>
+				<br />
+				<span>{{ pitch.votes }}</span>
+				</div>	
+				<div class="col-md-2">
+					<img src="{{ pitch.pictureurl}}" alt="Pitch Picture" height="100" width="140">	
+				</div>
+				<div class="col-md-5">
+				<h4 class="pitch-title">{{ pitch.title }}</h4>
+				
+				<span>{{ pitch.description }}</span>
+				</div>
+				<div class="col-md-3" style="padding-top:23px;">
+					<span>Maker: {{ pitch.labname }}</span>
+				</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.js"></script>
+	<script src="/app.js"></script>
+	
+	<br>
+	<br>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#pitches">Pitches</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#addyours">Add your pitch</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#contact">About us</a>
+                        </li>
+						<li class="footer-menu-divider">&sdot;</li>
+						<li>
+							<a href="" target="_blank"></a>
+						</li>
+                    </ul>
+					<p class="copyright text-muted small">
+					Project started by <a href="http://twitter.com/luduvigo" target="_blank">luduvigo</a><br>
+					Made with ♥ on <a href="http://en.wikipedia.org/wiki/Earth" target="_blank">Planet Earth</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

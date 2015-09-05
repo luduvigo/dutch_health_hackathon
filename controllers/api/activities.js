@@ -3,7 +3,7 @@ var router = require("express").Router()
 
 router.get("/", function (req, res, next){
 	console.log("Activity get")
-	Activity.find().sort('-insertiondate').exec(function(err, activities){
+	Activity.find().exec(function(err, activities){
 		if (err) {return next(err)}	
 		res.json(activities)
 	})
@@ -11,19 +11,15 @@ router.get("/", function (req, res, next){
 
 router.post("/", function(req, res, next){
 	console.log("activity received")
-	
-	//var pitch = new Pitch({
-	//	title: req.body.title,
-	//	votes: 0,
-    //    description: req.body.description,
-    //    tag: req.body.tag,
-    //    pictureurl: req.body.pictureurl,
-    //    labname: req.body.labname
-	//})
     
 	var activity = new Activity({
-		
+        patient: req.body.patient,
+        pictogram: req.body.pictogram,
+        activitydate: req.body.activitydate
     })
+
+    console.log(activity)
+
 	activity.save(function (err, activity) {
 		if(err) { return next(err) }
 		res.json(201, activity)

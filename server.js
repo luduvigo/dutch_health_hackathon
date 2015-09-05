@@ -1,6 +1,6 @@
 var express = require("express")
 var bodyParser = require("body-parser")
-var Post = require("./models/activity")
+var Activity = require("./models/activity")
 
 var app = express()
 app.use(bodyParser.json())

@@ -3,8 +3,9 @@ var Activity = db.model("Activity", {
 	patient:            {type: String, required: true},
     pictogram:           {type: String , required: true},
     day:                 {type: String },
-    hour:                {type: Number , min: 0, max: 23, required: true},
-    minute:              {type: Number , min: 0, max: 59, required: true},
+    minutesday:          {type: Number, required: true},
+    hour:                {type: String, required: true},
+    minute:              {type: String, required: true},
     done:                {type: Boolean, required: true, default: false},
     donetime:            {type: Date}
 })

@@ -27,27 +27,6 @@
 
     <a  name="activities"></a>
     <h1>Doctor page</h1>
-	<div ng-controller="ActivitiesCtrl" class="container">
-
-		<ul class="list-group">
-
-			<li ng-repeat="activity in activities | orderBy: '-activitydate'" class="list-group-item">
-				<div class="row">
-				<div class="col-md-1" style="padding-top:13px;"> 				
-				<span>{{ activity.pictogram }}</span>
-				</div>	
-				<div class="col-md-2">
-					<img src="./pictograms/{{ activity.pictogram }}" alt="Pictogram" height="100" width="140">	
-				</div>
-				<div class="col-md-5">
-				<div class="col-md-3" style="padding-top:23px;">
-					<span> {{ activity.activitydate }}</span>
-				</div>
-				</div>
-			</li>
-		</ul>
-	</div>
-
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.js"></script>
 	<script src="/app.js"></script>

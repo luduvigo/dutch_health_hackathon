@@ -23,27 +23,22 @@
 
 </head>
 
-<body ng-app="app">
-    <a  name="activities"></a>
+<body>
 
-	<div ng-controller="ActivitiesCtrl" class="container">
+    <div class="container-full">
+        <div class="row">
+            <div class="col-xs-4 col-md-4">
+                
+                <img src="../pictograms/toiletpapier.png" alt="Pitch Picture" hei    ght="100" width="140">
 
-		<ul class="list-group">
+            </div>
+            <div class="col-xs-4 col-md-4">
+            </div>
+            <div class="col-xs-4 col-md-4">
+            </div>
+        </div>    
 
-            <li ng-repeat="activity in activities | orderBy: 'minutesday'" class="list-group-item">
-				<div class="row">
-				    <div class="col-xs-6 col-md-6" style="padding-top:13px;"> 				
-				        <span>{{ activity.hour }}</span>
-				        <span>{{ activity.minute }}</span>
-				    </div>	
-				    <div class="col-xs-6 col-md-6">
-					    <img src="./pictograms/{{ activity.pictogram }}.png" alt="Pictogram" height="100" width="140">	
-				    </div>
-				</div>
-			</li>
-		</ul>
-	</div>
-
+    </div>    
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.js"></script>
 	<script src="/app.js"></script>

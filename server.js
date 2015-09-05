@@ -11,6 +11,7 @@ app.use(express.static(__dirname + '/public'));
 app.use("/api/activities", require("./controllers/api/activities"))
 app.use(require("./controllers/static"))
 
-app.listen(3000, function() {
-	console.log("Server listening on", 3000)
-})
+app.listen(process.env.PORT || 3000, function(){
+      console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
+

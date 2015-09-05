@@ -6,15 +6,15 @@ router.get("/", function(req, res){
 	res.sendfile("layouts/index.html")
 })
 
-router.get("/easy", function(req, res){
+router.get("/user", function(req, res){
 	res.sendfile("layouts/patient_easy.html")
 })
 
-router.get("/medium", function(req, res){
+router.get("/expert", function(req, res){
 	res.sendfile("layouts/patient_medium.html")
 })
 
-router.get("/hard", function(req, res){
+router.get("/pro", function(req, res){
 	res.sendfile("layouts/patient_hard.html")
 })
 

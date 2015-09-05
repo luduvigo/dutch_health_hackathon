@@ -3,7 +3,7 @@ var router = require("express").Router()
 
 router.get("/", function (req, res, next){
 	console.log("Activity get")
-	Activity.find().exec(function(err, activities){
+	Activity.find().sort('minutesday').exec(function(err, activities){
 		if (err) {return next(err)}	
 		
         console.log(activities)
@@ -18,6 +18,7 @@ router.post("/", function(req, res, next){
 	var activity = new Activity({
         patient: req.body.patient,
         pictogram: req.body.pictogram,
+        minutesday : req.body.minutesday,
         hour : req.body.hour,
         minute : req.body.minute
     })

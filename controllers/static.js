@@ -6,7 +6,16 @@ router.get("/", function(req, res){
 	res.sendfile("layouts/index.html")
 })
 
-router.get("/patient", function(req, res){
-	res.sendfile("layouts/patient.html")
+router.get("/easy", function(req, res){
+	res.sendfile("layouts/patient_easy.html")
 })
+
+router.get("/medium", function(req, res){
+	res.sendfile("layouts/patient_medium.html")
+})
+
+router.get("/hard", function(req, res){
+	res.sendfile("layouts/patient_hard.html")
+})
+
 module.exports = router

@@ -6,20 +6,20 @@ router.get("/", function(req, res){
 	res.sendfile("layouts/index.html")
 })
 
-router.get("/user/1", function(req, res){
+router.get("/user1", function(req, res){
 	res.sendfile("layouts/user.html")
 })
 
-router.get("/user/2", function(req, res){
-	res.sendfile("layouts/user.html")
+router.get("/user2", function(req, res){
+	res.sendfile("layouts/user2.html")
 })
 
-router.get("/user/3", function(req, res){
-	res.sendfile("layouts/user.html")
+router.get("/user3", function(req, res){
+	res.sendfile("layouts/user3.html")
 })
 
-router.get("/user/4", function(req, res){
-	res.sendfile("layouts/user.html")
+router.get("/user4", function(req, res){
+	res.sendfile("layouts/user4.html")
 })
 
 

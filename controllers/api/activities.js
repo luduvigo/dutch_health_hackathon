@@ -5,7 +5,10 @@ router.get("/", function (req, res, next){
 	console.log("Activity get")
 	Activity.find().exec(function(err, activities){
 		if (err) {return next(err)}	
-		res.json(activities)
+		
+        console.log(activities)
+        
+        res.json(activities)
 	})
 })
 
@@ -15,7 +18,8 @@ router.post("/", function(req, res, next){
 	var activity = new Activity({
         patient: req.body.patient,
         pictogram: req.body.pictogram,
-        activitydate: req.body.activitydate
+        hour : req.body.hour,
+        minute : req.body.minute
     })
 
     console.log(activity)

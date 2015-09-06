@@ -34,9 +34,9 @@
 </head>
 
 <body>
-	 <a  name="1"></a>
         <div id="status-1" class="row top-buffer remove">
 
+	 <a  name="1"></a>
             <div class="col-md-4">
                 <button type="button" class="black-button-high" aria-label="Left Align" style="background-color=#FFFD71;">
                       <span aria-hidden="true">08:00</span>
@@ -203,14 +203,14 @@
    	$('.remove').css( 'background-color', '' ); 
     if(w<=$('#status-1').offset().top){
          $('#status-1').css( 'background-color', '#FFFD71' );   
-    }else if(w<=$('#status-2').offset().top){
+    } else if(w<=$('#status-2').offset().top){
          $('#status-2').css( 'background-color', '#FFFD71' );   
     }else if(w<=$('#status-3').offset().top){
          $('#status-3').css( 'background-color', '#FFFD71' );   
     }else if(w<=$('#status-4').offset().top){
          $('#status-4').css( 'background-color', '#FFFD71' );   
     }else{
-         $('#status-5').css( 'background-color', '#FFFD71' );   
+         $('#status-1').css( 'background-color', '#FFFD71' );   
     }
     
 }); 

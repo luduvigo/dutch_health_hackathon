@@ -29,7 +29,7 @@
 
 </head>
 
-<body>
+<body onload="removeBar()">
 
         <div class="row top-buffer">
             <div class="col-md-4">
@@ -84,5 +84,11 @@
 	<br>
 
 </body>
+
+<script> 
+function removeBar() {
+    window.scrollTo(0, 1);
+}
+</script>
 
 </html>

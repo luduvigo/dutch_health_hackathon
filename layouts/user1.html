@@ -33,7 +33,7 @@
 	
 </head>
 
-<body onload="removeBar()">
+<body onload="window.scrollTo(0, 1);">
 
         <div class="row top-buffer">
             <div class="col-md-4">
@@ -87,11 +87,7 @@
 	<br>
 
 </body>
-<script> 
-function removeBar() {
-    window.scrollTo(0, 1);
-}
-	
+<script> 	
     jQuery(document).ready(function () {
         $("#input-21f").rating({
             starCaptions: function(val) {

@@ -23,8 +23,8 @@ router.get("/user4", function(req, res){
 })
 
 
-router.get("/expert", function(req, res){
-	res.sendfile("layouts/patient_medium.html")
+router.get("/medium", function(req, res){
+	res.sendfile("layouts/medium.html")
 })
 
 router.get("/pro", function(req, res){

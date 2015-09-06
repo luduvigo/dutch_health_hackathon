@@ -50,11 +50,11 @@
 		<input id="input-21d" value="0" type="number" class="rating" min=0 max=5 step=1 data-size="md">
 		<br>
 		<br>
-		<button type="button" class="btn yellow-button-small" aria-label="Left Align" href="./user2">
-                      <a href="#2"/><span aria-hidden="true">Niet gedaan</span>
+		<button type="button" class="btn yellow-button-small" aria-label="Left Align">
+                      <a href="./medium#2"/><span aria-hidden="true">Niet gedaan</span>
                 </button>
-		<button type="button" class="btn green-button-small" aria-label="Left Align" href="./user2">
-                	<a href="#2"/><span aria-hidden="true">Wel gedaan</span>
+		<button type="button" class="btn green-button-small" aria-label="Left Align">
+                	<a href="./medium#2"/><span aria-hidden="true">Wel gedaan</span>
                 </button>
             </div>
         </div> 
@@ -214,6 +214,21 @@
     }
     
 }); 
+
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 </script>
 
 </html>

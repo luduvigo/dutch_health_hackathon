@@ -310,7 +310,8 @@
                 self.$clearElement.attr({"title": self.clearButtonTitle}).html(self.clearButton);
                 return '';
             }
-            return '<div class="' + css + '" title="' + self.clearButtonTitle + '">' + self.clearButton + '</div>';
+            //return '<div class="' + css + '" title="' + self.clearButtonTitle + '">' + self.clearButton + '</div>';
+	    return '';
         },
         renderCaption: function () {
             var self = this, val = self.$element.val(), html;
@@ -453,7 +454,6 @@
 
     $.fn.rating.defaults = {
         stars: 5,
-        glyphicon: true,
         symbol: null,
         ratingClass: '',
         disabled: false,
@@ -487,8 +487,6 @@
             4.5: 'label label-success',
             5: 'label label-success'
         },
-        clearButton: '<i class="glyphicon glyphicon-minus-sign"></i>',
-        clearButtonTitle: 'Clear',
         clearButtonBaseClass: 'clear-rating',
         clearButtonActiveClass: 'clear-rating-active',
         clearCaption: 'Nog intevullen',

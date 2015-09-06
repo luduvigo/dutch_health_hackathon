@@ -231,7 +231,7 @@ p.copyright {
 }
 
 .black-button { 
-	background-color: #333333;
+	background-color: #1E1E1C;
 	color: white;
 	text-align: center;
 	display: table;
@@ -243,7 +243,24 @@ p.copyright {
 
 
 .black-button:checked { 
-	background-color: #333333;
+	background-color: #1E1E1C;
+	color: white;
+}
+
+.black-button-high { 
+	background-color: #1E1E1C;
+	color: white;
+	text-align: center;
+	display: table;
+    margin: 0 auto;
+	width: 200px;
+	height: 300px;
+	font-size: 30px;
+}
+
+
+.black-button-high:checked { 
+	background-color: #1E1E1C;
 	color: white;
 }
 
@@ -269,3 +286,28 @@ p.copyright {
 	height: 40px;
 	font-size: 24px !important;
 }
+
+.yellow-button-small { 
+	background-color: #FF9700;
+	color: white !important;
+	tex
+	text-align: center;
+	display: table;
+    margin: 0 auto;
+	width: 130px;
+	height: 40px;
+	font-size: 20px !important;
+}
+
+.green-button-small { 
+	background-color: #77A178;
+	color: white !important;
+	text-align: center;
+	display: table;
+    margin: 0 auto;
+	width: 130px;
+	height: 40px;
+	font-size: 20px !important;
+}
+
+

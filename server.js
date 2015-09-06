@@ -2,7 +2,11 @@ var express = require("express")
 var bodyParser = require("body-parser")
 var Activity = require("./models/activity")
 
-var app = express()
+var favicon = require('serve-favicon');
+
+var app = express();
+app.use(favicon(__dirname + '/public/favicon.ico'));
+
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }));
 

@@ -231,7 +231,7 @@ p.copyright {
 }
 
 .black-button { 
-	background-color: black;
+	background-color: #333333;
 	color: white;
 	text-align: center;
 	display: table;

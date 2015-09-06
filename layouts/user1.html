@@ -9,7 +9,7 @@
     <meta name="description" content="Remembro ergo sum">
     <meta name="author" content="Paolo Antonio Rossi">
 
-    <title>iRemember</title>
+    <title>Re-member</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -33,7 +33,7 @@
 	
 </head>
 
-<body>
+<body onload="myFunction()">
 
         <div class="row top-buffer">
             <div class="col-md-4">
@@ -87,7 +87,11 @@
 	<br>
 
 </body>
-<script>
+<script> 
+function removeBar() {
+    window.scrollTo(0, 1);
+}
+	
     jQuery(document).ready(function () {
         $("#input-21f").rating({
             starCaptions: function(val) {

@@ -35,7 +35,7 @@
 
 <body>
 
-        <div id="status-1" class="row top-buffer activity-background">
+        <div id="status-1" class="row top-buffer remove">
 
             <div class="col-md-4">
                 <button type="button" class="black-button-high" aria-label="Left Align" style="background-color=#FFFD71;">
@@ -61,7 +61,7 @@
 
 	<hr>
 
-	 <div id="status-2" class="row top-buffer">
+	 <div id="status-2" class="row top-buffer remove">
 	 <a  name="2"></a>
             <div class="col-md-4">
                 <button type="button" class="black-button-high" aria-label="Left Align">
@@ -87,7 +87,7 @@
 
 	<hr>
 
-	        <div id="status-3" class="row top-buffer">
+	        <div id="status-3" class="row top-buffer remove">
 	   <a  name="3"></a>
             <div class="col-md-4">
                 <button type="button" class="black-button-high" aria-label="Left Align">
@@ -113,7 +113,7 @@
 
 	<hr>
 
-	 <div id="status-4"class="row top-buffer">
+	 <div id="status-4"class="row top-buffer remove">
 	<a  name="4"></a>
             <div class="col-md-4">
                 <button type="button" class="black-button-high" aria-label="Left Align">
@@ -200,7 +200,7 @@
 
 	$(window).scroll(function(){;
     	w = Math.floor( $(window).scrollTop() );  
-   		$('.remove').css( 'background-color', '' ); 
+   	$('.remove').css( 'background-color', '' ); 
     if(w<=$('#status-1').offset().top){
          $('#status-1').css( 'background-color', '#FFFD71' );   
     }else if(w<=$('#status-2').offset().top){

@@ -246,3 +246,26 @@ p.copyright {
 	background-color: #333333;
 	color: white;
 }
+
+.yellow-button { 
+	background-color: #FF9700;
+	color: white !important;
+	tex
+	text-align: center;
+	display: table;
+    margin: 0 auto;
+	width: 200px;
+	height: 40px;
+	font-size: 24px !important;
+}
+
+.green-button { 
+	background-color: #77A178;
+	color: white !important;
+	text-align: center;
+	display: table;
+    margin: 0 auto;
+	width: 200px;
+	height: 40px;
+	font-size: 24px !important;
+}

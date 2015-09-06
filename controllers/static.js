@@ -7,7 +7,7 @@ router.get("/", function(req, res){
 })
 
 router.get("/user1", function(req, res){
-	res.sendfile("layouts/user.html")
+	res.sendfile("layouts/user1.html")
 })
 
 router.get("/user2", function(req, res){

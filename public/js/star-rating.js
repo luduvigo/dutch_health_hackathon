@@ -465,15 +465,15 @@
         defaultCaption: '{rating} Stars',
         starCaptions: {
             0.5: 'Half Star',
-            1: 'One Star',
+            1: 'Een Ster',
             1.5: 'One & Half Star',
-            2: 'Two Stars',
+            2: 'Twee Sterren',
             2.5: 'Two & Half Stars',
-            3: 'Three Stars',
+            3: 'Drie Sterren',
             3.5: 'Three & Half Stars',
-            4: 'Four Stars',
+            4: 'Vier Sterren',
             4.5: 'Four & Half Stars',
-            5: 'Five Stars'
+            5: 'Vijf Sterren'
         },
         starCaptionClasses: {
             0.5: 'label label-danger',
@@ -491,7 +491,7 @@
         clearButtonTitle: 'Clear',
         clearButtonBaseClass: 'clear-rating',
         clearButtonActiveClass: 'clear-rating-active',
-        clearCaption: 'Not Rated',
+        clearCaption: 'Nog intevullen',
         clearCaptionClass: 'label label-default',
         clearValue: null,
         captionElement: null,
